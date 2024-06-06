@@ -164,7 +164,13 @@ export class Tools {
                 if (pokemon !== last) code += "|";
                 else
                     code +=
-                        '- <b><a href="' + team.link + '" target="_blank" rel="noopener">' + team.title + " by " + team.author + "</a></b>";
+                        '- <b><a href="' +
+                        team.link +
+                        '" target="_blank" rel="noopener">' +
+                        team.title +
+                        " by " +
+                        team.author +
+                        "</a></b><br>";
             }
         }
         return code;
@@ -185,7 +191,7 @@ export class Tools {
                 '" target="_blank" rel="noopener">' +
                 team.link +
                 "</a>";
-            if (i !== limit) code += "<br>";
+            if (i !== limit) code += "<br><br>";
         }
         return code;
     }
