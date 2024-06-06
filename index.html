@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Sample teams Generator</title>
+        <meta property="og:title" content="Sample teams Generator" />
+        <meta property="og:description" content="An helpful tool to generate sample HTML for RFAQs." />
+        <meta property="og:url" content="https://dirain1700.github.io/SampleGenerator/" />
+        <meta property="og:type" content="article" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"
+            media="print"
+            onload="this.media='all'"
+        />
+        <link href="https://play.pokemonshowdown.com/style/battle-log.css" rel="stylesheet" type="text/css" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1>Sample teams Generator</h1>
+        </header>
+        <div style="margin: auto; padding: 5%">
+            <p>Paste pokapaste links on the text box below, and click "Generate HTML code"!</p>
+            <div id="main">
+                <div id="inputs">
+                    <textarea type="text" id="linksInput" placeholder="https://pokepast.es/..."></textarea>
+                    <br />
+                    <select name="style" id="htmlStyle">
+                        <option value="">-- Select HTML style --</option>
+                        <option value="ou">OverUsed</option>
+                        <option value="uu">UnderUsed</option>
+                        <option value="uber">Ubers</option>
+                    </select>
+                    <button class="button tools" id="generateHTML">Generate HTML code</button>
+                </div>
+                <div id="outputs">
+                    <textarea id="htmlCode" placeholder="Generated code will appear here..."></textarea>
+                    <button class="button tools" id="copyHTML">Copy generated code</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+    <footer>
+        <ul id="footer">
+            <li><a href="https://github.com/Dirain1700/SampleGenerator">GitHub Repository</a> |</li>
+            <li><a href="https://github.com/Dirain1700/SampleGenerator/blob/master/LICENCE">Licence</a></li>
+            <br />
+            <li>©︎ 2024 Dirain All rights reserved.</li>
+        </ul>
+    </footer>
+</html>

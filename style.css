@@ -1,0 +1,169 @@
+html,
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    border: none;
+    touch-action: manipulation;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    background-color: powderblue;
+}
+
+body {
+    margin: 5%;
+    padding: 0px;
+    background-color: white;
+}
+
+p,
+ul,
+td,
+th,
+button,
+input {
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+}
+
+p {
+    line-hight: 100%;
+}
+
+html,
+body,
+input textarea {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+textarea#linksInput {
+    autocapitalize: off;
+    autocorrect: off;
+    spellcheck: false;
+    required: required;
+    border-radius: 5px;
+    border: 1.5px black solid;
+    width: 270px;
+    padding: 5px 0.7rem;
+    margin: 1rem 0;
+    font-family: "Noto Sans JP", sans-serif;
+    resize: vertical;
+    min-height: 8.5rem;
+    font-size: 0.85rem;
+    line-height: 1.2; /* default */
+}
+
+textarea#htmlCode {
+    autocapitalize: off;
+    autocorrect: off;
+    spellcheck: false;
+    required: required;
+    border-radius: 5px;
+    border: 1.5px black solid;
+    width: 500px;
+    padding: 5px 0.7rem;
+    margin: 1rem 0;
+    font-family: mono-space;
+    resize: none;
+    min-height: 8.5rem;
+    font-size: 0.85rem;
+    line-height: 1.2; /* default */
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+div#inputs,
+div#outputs {
+    flex: 1 0 auto;
+}
+
+div#outputs {
+    display: grid;
+    justify-content: right;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+.button.tool {
+    font-family: "Noto Sans JP", sans-serif;
+    display: inline-block;
+
+    /* default colors */
+    color: #030303;
+    border: solid 1px deepskyblue;
+    background: powderblue;
+    font-size: 12pt;
+    padding: 3px 1vw;
+}
+
+.infobox {
+    border: 2.5px dashed black;
+    padding: 2px 0px;
+    position: relative;
+}
+
+button#generateHTML {
+    min-height: 2rem;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+button#copyHTML {
+    min-height: 2rem;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+select#htmlStyle {
+    font-size: 1rem;
+    height: 1.8rem;
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+
+header,
+footer {
+    background-color: powderblue;
+    width: 100%;
+}
+
+header {
+    width: 95%;
+    height: 60px;
+    padding: 0 5% 20px 5%;
+    text-align: left;
+    color: black;
+}
+
+header h1 {
+    font-weight: 800px;
+}
+
+footer {
+    padding: 20px 0 0 0;
+    width: 100%;
+    height: 70px;
+    background-color: powderblue;
+    color: white;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    font-weight: 300;
+    color: black;
+}
