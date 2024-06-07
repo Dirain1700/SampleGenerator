@@ -112,7 +112,11 @@ export class Tools {
         if (!inputTextArea || !outputTextArea) throw new Error("Input text area not found");
         const links = (inputTextArea.value?.split("\n") ?? []).map((l) => l.trim());
         const style = document.getElementById(Tools.generatedCodeStyleId) as HTMLSelectElement | null;
-        if (!style) throw new Error("Please select a style");
+        if (!style) throw new Error("Style select not found");
+        if (!style.value) {
+            alert("Please select a style");
+            return;
+        }
         Promise.all(links.map((l) => Tools.fetchTeam(l)))
             .then((teams) => {
                 const code = Tools.generateHTMLCode(teams.filter((t) => t !== null) as ITeamInfo[], style.value as codeStyle);
