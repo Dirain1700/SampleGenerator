@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    margin: 5%;
+    margin: 2% 5% 5% 5%;
     padding: 0px;
     background-color: white;
 }
@@ -30,26 +30,24 @@ input {
 }
 
 p {
-    line-hight: 100%;
+    line-height: 1.4;
 }
 
 html,
 body,
-input textarea {
+input,
+textarea {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-appearance: none;
+    appearance: none;
 }
 
 textarea#linksInput {
-    autocapitalize: off;
-    autocorrect: off;
-    spellcheck: false;
-    required: required;
     border-radius: 5px;
     border: 1.5px black solid;
-    width: 270px;
+    width: 300px;
     padding: 5px 0.7rem;
     margin: 1rem 0;
     font-family: "Noto Sans JP", sans-serif;
@@ -60,23 +58,26 @@ textarea#linksInput {
 }
 
 textarea#htmlCode {
-    autocapitalize: off;
-    autocorrect: off;
-    spellcheck: false;
-    required: required;
     border-radius: 5px;
     border: 1.5px black solid;
-    width: 500px;
+    min-width: 600px;
+    width: 60%;
     padding: 5px 0.7rem;
     margin: 1rem 0;
-    font-family: mono-space;
+    font-family: "Noto Sans Mono", monospace;
     resize: none;
     min-height: 8.5rem;
     font-size: 0.85rem;
-    line-height: 1.2; /* default */
+    line-height: 1.3;
+}
+
+#top {
+    margin: auto;
+    padding: 3%;
 }
 
 #main {
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -95,9 +96,6 @@ div#outputs {
     justify-content: right;
 }
 
-@media screen and (max-width: 768px) {
-}
-
 .button.tool {
     font-family: "Noto Sans JP", sans-serif;
     display: inline-block;
@@ -108,12 +106,6 @@ div#outputs {
     background: powderblue;
     font-size: 12pt;
     padding: 3px 1vw;
-}
-
-.infobox {
-    border: 2.5px dashed black;
-    padding: 2px 0px;
-    position: relative;
 }
 
 button#generateHTML {
@@ -132,7 +124,7 @@ select#htmlStyle {
     font-size: 1rem;
     height: 1.8rem;
     border-radius: 7px;
-    margin-right: 1rem;
+    margin: 1rem 0;
 }
 
 header,
@@ -142,10 +134,11 @@ footer {
 }
 
 header {
-    width: 95%;
-    height: 60px;
-    padding: 0 5% 20px 5%;
-    text-align: left;
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    vertical-align: middle;
+    background-color: powderblue;
     color: black;
 }
 
@@ -166,4 +159,62 @@ footer ul li {
     display: inline;
     font-weight: 300;
     color: black;
+}
+
+@media screen and (max-width: 880px) {
+    textarea#htmlCode {
+        min-width: 100px;
+        width: 340px;
+    }
+
+    textarea#linksInput {
+        min-width: 100px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin-top: 5%;
+    }
+    #main {
+        flex-direction: column;
+        margin-top: 0;
+        width: 92%;
+    }
+
+    header {
+        height: 2rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    div#outputs {
+        width: 100%;
+    }
+
+    textarea#linksInput {
+        min-width: auto;
+        width: 100%;
+    }
+
+    textarea#htmlCode {
+        min-width: auto;
+        width: 100%;
+    }
+
+    button#copyHTML {
+        width: 100%;
+    }
+
+    div#outputs {
+        width: 100%;
+        display: inline-block;
+        justify-content: left;
+    }
 }

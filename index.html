@@ -16,6 +16,13 @@
             media="print"
             onload="this.media='all'"
         />
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400&display=swap"
+            media="print"
+            onload="this.media='all'"
+        />
         <link href="https://play.pokemonshowdown.com/style/battle-log.css" rel="stylesheet" type="text/css" />
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -23,7 +30,7 @@
         <header>
             <h1>Sample teams Generator</h1>
         </header>
-        <div style="margin: auto; padding: 5%">
+        <div id="top">
             <p>Paste some pokapaste links on the text box below, and click "Generate HTML code"!</p>
             <div id="main">
                 <div id="inputs">
@@ -35,10 +42,12 @@
                         <option value="uu">UnderUsed</option>
                         <option value="uber">Ubers</option>
                     </select>
+                    <br />
                     <button class="button tools" id="generateHTML">Generate HTML code</button>
                 </div>
                 <div id="outputs">
-                    <textarea id="htmlCode" placeholder="Generated code will appear here..."></textarea>
+                    <textarea id="htmlCode" placeholder="Generated code will appear here..." readonly></textarea>
+                    <br />
                     <button class="button tools" id="copyHTML">Copy generated code</button>
                 </div>
             </div>
