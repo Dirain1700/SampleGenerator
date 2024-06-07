@@ -65,7 +65,7 @@ textarea#htmlCode {
     padding: 5px 0.7rem;
     margin: 1rem 0;
     font-family: "Noto Sans Mono", monospace;
-    resize: none;
+    resize: both;
     min-height: 8.5rem;
     font-size: 0.85rem;
     line-height: 1.3;
