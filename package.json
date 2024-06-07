@@ -1,5 +1,5 @@
 {
-    "name": "womf",
+    "name": "samplegenerator",
     "version": "0.0.1",
     "type": "commonjs",
     "devDependencies": {
@@ -40,16 +40,16 @@
     "keywords": [],
     "author": "Dirain1700",
     "license": "MIT",
-    "description": "A helpful tool for hosting womf",
+    "description": "An helpful tool to generate sample HTML for RFAQs.",
     "engines": {
         "node": ">= 16.9.0"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Dirain1700/WOMF.git"
+        "url": "git+https://github.com/Dirain1700/SampleGenerator.git"
     },
     "bugs": {
-        "url": "https://github.com/Dirain1700/WOMF/issues"
+        "url": "https://github.com/Dirain1700/SampleGenerator/issues"
     },
-    "homepage": "https://github.com/Dirain1700/WOMF#readme"
+    "homepage": "https://github.com/Dirain1700/SampleGenerator#readme"
 }
